@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vishnu Late - AI / Machine Learning Engineer Portfolio">
+    <title>Vishnu Late | AI / ML Engineer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Preloader / Boot Sequence -->
+    <div class="preloader" id="preloader">
+        <!-- Background Data Grid -->
+        <div class="preloader-grid"></div>
+
+        <!-- Tactical HUD Corners -->
+        <div class="hud-corner-preloader top-left"></div>
+        <div class="hud-corner-preloader top-right"></div>
+        <div class="hud-corner-preloader bottom-left"></div>
+        <div class="hud-corner-preloader bottom-right"></div>
+
+        <div class="loader-content">
+            <div class="loader-logo-container">
+                <div class="hologram-ring"></div>
+                <div class="loader-logo">
+                    <span class="logo-text neon-text" style="font-size: 3rem;">VL</span>
+                </div>
+            </div>
+            <div class="loader-text neon-text">INITIALIZING_SYSTΞM...</div>
+            <div class="loader-bar-bg">
+                <div class="loader-bar-fill"></div>
+            </div>
+            <!-- Dynamic Diagnostic Feed -->
+            <div class="diagnostic-feed">
+                <p id="diagnostic-text">SECURE_LINK_ESTABLISHED...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-bar"></div>
+    </div>
+    <!-- Global Scan Sweep -->
+    <div class="global-scan"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Background Canvas for Anti-Gravity Particles -->
+    <canvas id="particle-canvas"></canvas>
+    <canvas id="matrix-canvas"></canvas>
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text neon-text">VL</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active"><i class="fas fa-terminal"></i> <span>Home</span></a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user-shield"></i> <span>About</span></a></li>
+                <li><a href="#resume" class="nav-link"><i class="fas fa-file-invoice"></i> <span>Resume</span></a></li>
+                <li><a href="#education" class="nav-link"><i class="fas fa-user-graduate"></i>
+                        <span>Education</span></a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-microchip"></i> <span>Skills</span></a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i>
+                        <span>Projects</span></a></li>
+                <li><a href="#certifications" class="nav-link"><i class="fas fa-certificate"></i>
+                        <span>Certifications</span></a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-satellite-dish"></i> <span>Contact</span></a>
+                </li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link"><i class="fas fa-terminal"></i> Home</a></li>
+            <li><a href="#about" class="mobile-nav-link"><i class="fas fa-user-shield"></i> About</a></li>
+            <li><a href="#resume" class="mobile-nav-link"><i class="fas fa-file-invoice"></i> Resume</a></li>
+            <li><a href="#education" class="mobile-nav-link"><i class="fas fa-user-graduate"></i> Education</a></li>
+            <li><a href="#skills" class="mobile-nav-link"><i class="fas fa-microchip"></i> Skills</a></li>
+            <li><a href="#projects" class="mobile-nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="#certifications" class="mobile-nav-link"><i class="fas fa-certificate"></i> Certifications</a>
+            </li>
+            <li><a href="#contact" class="mobile-nav-link"><i class="fas fa-satellite-dish"></i> Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-hud">
+                <div class="hud-corner hud-top-left">
+                    <span class="hud-line"></span>
+                    <span class="hud-text">UPLINK: ACTIVE</span>
+                </div>
+                <div class="hud-corner hud-bottom-right">
+                    <span class="hud-line"></span>
+                    <span class="hud-text">ENCRYPTION: AES-256</span>
+                    <span class="hud-text">CORE_TEMP: OPTIMAL</span>
+                </div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content fade-in-up">
+                    <h1 class="glitch-text" data-text="VISHNU LATE">VISHNU LATE</h1>
+                    <h2 class="typewriter-container"><span class="typewriter-js"></span><span
+                            class="typed-cursor">|</span></h2>
+
+                    <p class="hero-description">
+                        Building intelligent systems using AI and data
+                    </p>
+
+                    <div class="hero-actions mb-4">
+                        <a href="#resume" class="btn btn-primary btn-outline glow-btn">
+                            <i class="fas fa-file-invoice"></i> Access_Resume
+                        </a>
+                    </div>
+
+                    <div class="social-dock glass-panel">
+                        <a href="https://github.com/vishnu-late" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub" class="social-icon hover-float"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vishnu-late-4a4a0229b" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon hover-float"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual fade-in">
+                    <div class="antigravity-core">
+                        <div class="core-ring core-ring-1"></div>
+                        <div class="core-ring core-ring-2"></div>
+                        <div class="core-ring core-ring-3"></div>
+                        <div class="core-center glow-pulse robot-pulse">
+                            <img src="profile_hero.jpg" alt="Vishnu Late" class="hero-profile-img">
+                        </div>
+
+                        <!-- Robotic Decoration -->
+                        <div class="robot-arm robot-arm-top neon-text">
+                            <i class="fas fa-robot fa-2x"></i>
+                        </div>
+                        <div class="robot-arm robot-arm-bottom neon-text">
+                            <i class="fas fa-gears fa-2x"></i>
+                        </div>
+
+                        <!-- Floating artifacts around the core -->
+                        <div class="artifact art-1 float-anim-1">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="artifact art-2 float-anim-2">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="artifact art-3 float-anim-3">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span class="scroll-text">INITIATE SCROLL</span>
+                <i class="fas fa-angle-double-down fade-down"></i>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Initialize <span class="highlight-text">About_Me</span></h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-visual reveal-left float-anim-slow">
+                        <div class="hologram-container">
+                            <div class="holo-base"></div>
+                            <div class="holo-beam"></div>
+                            <div class="holo-avatar glass-panel">
+                                <img src="robotic_ai_hologram_hero_1773648683733.png" alt="Robotic AI Assistant"
+                                    class="holo-img">
+                                <div class="scan-line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-content reveal-right">
+                        <div class="terminal-window glass-panel">
+                            <div class="terminal-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="terminal-title">user@vishnu-late:~/bio</span>
+                            </div>
+                            <div class="terminal-body">
+                                <p><span class="prompt">$</span> cat objective.txt</p>
+                                <p class="terminal-text">
+                                    Aspiring AI/ML Engineer with strong foundation in Python, data analysis, and machine
+                                    learning.
+                                </p>
+                                <p><span class="prompt">$</span> ./get_mission.sh</p>
+                                <p class="terminal-text">
+                                    Passionate about building intelligent systems and solving real-world problems using
+                                    data-driven approaches.
+                                </p>
+                                <p><span class="prompt blink">_</span></p>
+                            </div>
+                        </div>
+
+                        <div class="stats-grid mt-4">
+                            <div class="stat-box glass-panel hover-float">
+                                <div class="stat-number neon-text">50+</div>
+                                <div class="stat-label">Neural Nets Deployed</div>
+                            </div>
+                            <div class="stat-box glass-panel hover-float">
+                                <div class="stat-number neon-text">Tb</div>
+                                <div class="stat-label">Data Processed</div>
+                            </div>
+                            <div class="stat-box glass-panel hover-float">
+                                <div class="stat-number neon-text">∞</div>
+                                <div class="stat-label">Lines of Code</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Professional <span class="highlight-text">Dossier</span></h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="resume-container reveal-up">
+                    <div class="resume-viewer glass-panel">
+                        <div class="resume-header">
+                            <div class="header-left">
+                                <i class="fas fa-file-invoice"></i>
+                                <span>VISHNU_LATE_CV_2026.pdf</span>
+                            </div>
+                            <div class="header-right">
+                                <span class="status-tag">CONFIDENTIAL</span>
+                            </div>
+                        </div>
+                        <div class="resume-image-wrapper">
+                            <img src="resume_vishnu.jpg" alt="Vishnu Late Resume" class="resume-img">
+                            <div class="scan-line-resume"></div>
+                            <div class="resume-overlay"></div>
+                        </div>
+                        <div class="resume-footer">
+                            <a href="resume_vishnu.jpg" download="Vishnu_Late_Resume.jpg"
+                                class="btn btn-primary glow-btn">
+                                <i class="fas fa-download"></i> Download_Transcript
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Academic <span class="highlight-text">Records</span></h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="education-timeline reveal-up">
+                    <div class="timeline-item glass-panel hover-float">
+                        <div class="timeline-dot glow-pulse"></div>
+                        <div class="timeline-content">
+                            <h3>JSPM Narhe Technical Campus, Narhe, Pune</h3>
+                            <p class="degree">BE in Artificial Intelligence and Data Science</p>
+                            <p class="score">SGPA: 9.41</p>
+                            <span class="timeline-date">Sept 2025 - May 2028</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item glass-panel hover-float">
+                        <div class="timeline-dot glow-pulse"></div>
+                        <div class="timeline-content">
+                            <h3>Government Polytechnic, Ambad</h3>
+                            <p class="degree">Diploma in Artificial Intelligence and Machine Learning</p>
+                            <p class="score">Percentage: 90.00%</p>
+                            <span class="timeline-date">Sept 2022 - May 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item glass-panel hover-float">
+                        <div class="timeline-dot glow-pulse"></div>
+                        <div class="timeline-content">
+                            <h3>New High School Gadana</h3>
+                            <p class="degree">Secondary School Certificate (SSC)</p>
+                            <p class="score">Percentage: 91.40%</p>
+                            <span class="timeline-date">March 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Core <span class="highlight-text">Capabilities</span></h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="skills-grid reveal-up">
+                    <!-- Programming -->
+                    <div class="skill-card glass-panel hover-scale">
+                        <div class="skill-icon-container">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programming</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">R</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                    </div>
+
+                    <!-- AI/ML -->
+                    <div class="skill-card glass-panel hover-scale">
+                        <div class="skill-icon-container">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI / ML</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Data Analysis</span>
+                            <span class="tech-tag">Data Visualization</span>
+                        </div>
+                    </div>
+
+                    <!-- Libraries -->
+                    <div class="skill-card glass-panel hover-scale">
+                        <div class="skill-icon-container">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Libraries</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Matplotlib</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-card glass-panel hover-scale">
+                        <div class="skill-icon-container">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Databases</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-card glass-panel hover-scale">
+                        <div class="skill-icon-container">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">GitHub</span>
+                            <span class="tech-tag">Jupyter Notebook</span>
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Excel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Deployed <span class="highlight-text">Systems</span></h2>
+                    <div class="title-line"></div>
+                    <p class="section-subtitle">Real-world impacts powered by artificial intelligence.</p>
+                </div>
+
+                <div class="projects-track reveal-up">
+
+                    <!-- Project 1 -->
+                    <div class="project-container glass-panel hover-float">
+                        <div class="scan-line"></div>
+                        <div class="project-visual">
+                            <img src="smart_inventory_ai_visual_1773648973238.png" alt="Smart Inventory AI"
+                                class="project-img">
+                            <div class="project-overlay"></div>
+                            <div class="project-icon-large">
+                                <i class="fas fa-cubes"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-badge">AI + Machine Learning</div>
+                            <h3 class="project-title">Smart Inventory Management System</h3>
+                            <p class="project-desc">
+                                Developed an AI-based inventory management system for automated stock monitoring and
+                                demand prediction using machine learning.
+                            </p>
+                            <div class="project-stack">
+                                <span><i class="fab fa-python"></i> Python</span>
+                                <span><i class="fas fa-database"></i> SQL</span>
+                                <span><i class="fas fa-table"></i> Pandas</span>
+                                <span><i class="fas fa-server"></i> FastAPI</span>
+                                <span><i class="fas fa-brain"></i> Scikit-learn</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-sm btn-outline"><i class="fab fa-github"></i> Repository</a>
+                                <a href="#" class="btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Execute
+                                    System</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-container glass-panel hover-float reverse">
+                        <div class="scan-line"></div>
+                        <div class="project-visual">
+                            <img src="agrointelx_rover_iot_1773649155900.png" alt="AgroIntelX Rover"
+                                class="project-img">
+                            <div class="project-overlay"></div>
+                            <div class="project-icon-large">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <div class="circuit-pattern"></div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-badge">IoT + AI</div>
+                            <h3 class="project-title">AgroIntelX</h3>
+                            <p class="project-desc">
+                                WiFi-based 6-wheel rover controlled via mobile app with manual spray ON/OFF control.
+                                IoT-based irrigation system with automatic pump control and real-time mobile monitoring.
+                            </p>
+                            <div class="project-stack">
+                                <span><i class="fas fa-microchip"></i> ESP8266 (WiFi)</span>
+                                <span><i class="fas fa-satellite-dish"></i> IoT Sensors</span>
+                                <span><i class="fas fa-cloud"></i> ThingSpeak</span>
+                                <span><i class="fas fa-mobile-alt"></i> Mobile App</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-sm btn-outline"><i class="fab fa-github"></i> Repository</a>
+                                <a href="#" class="btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Execute
+                                    System</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Verified <span class="highlight-text">Credentials</span></h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="cert-grid reveal-up">
+                    <div class="cert-card glass-panel hover-scale">
+                        <div class="cert-img-container">
+                            <img src="smart_inventory_ai_visual_1773648973238.png" alt="Python Certification"
+                                class="cert-img">
+                            <div class="cert-img-overlay"></div>
+                        </div>
+                        <div class="cert-content">
+                            <div class="cert-icon glow-pulse">
+                                <i class="fas fa-shield-halved"></i>
+                            </div>
+                            <h3>Python Programming Certification</h3>
+                            <p class="issuer">Completed an in-depth Python programming course with practical experience
+                                in core concepts and Object-Oriented Programming.</p>
+                            <div class="cert-tags mt-2">
+                                <span class="tech-tag" style="font-size: 0.75rem; padding: 2px 8px;">Python</span>
+                                <span class="tech-tag" style="font-size: 0.75rem; padding: 2px 8px;">OOP</span>
+                                <span class="tech-tag" style="font-size: 0.75rem; padding: 2px 8px;">Problem
+                                    Solving</span>
+                            </div>
+                            <div class="cert-footer mt-auto pt-3">
+                                <a href="smart_inventory_ai_visual_1773648973238.png" target="_blank"
+                                    class="verify-link">Verify <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass-panel hover-scale">
+                        <div class="cert-img-container">
+                            <img src="data_science_visual.png" alt="Data Science Simulation" class="cert-img">
+                            <div class="cert-img-overlay"></div>
+                        </div>
+                        <div class="cert-content">
+                            <div class="cert-icon glow-pulse">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Data Science Job Simulation</h3>
+                            <p class="issuer">Forage & Lloyds Banking Group</p>
+                            <p class="issuer" style="font-size: 0.85rem; padding-top: 5px;">Completed practical tasks in
+                                data gathering, exploratory analysis, and building a machine learning model.</p>
+                            <div class="cert-tags mt-2">
+                                <span class="tech-tag" style="font-size: 0.75rem; padding: 2px 8px;">Data
+                                    Analysis</span>
+                                <span class="tech-tag" style="font-size: 0.75rem; padding: 2px 8px;">Machine
+                                    Learning</span>
+                            </div>
+                            <div class="cert-footer mt-auto pt-3">
+                                <span class="cert-date" style="font-size: 0.85rem;"><i class="far fa-calendar-alt"></i>
+                                    June 2025</span>
+                                <a href="data_science_cert.jpg" target="_blank" class="verify-link">Verify <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass-panel hover-scale">
+                        <div class="cert-img-container">
+                            <img src="genai_visual.png" alt="GenAI Analytics" class="cert-img">
+                            <div class="cert-img-overlay"></div>
+                        </div>
+                        <div class="cert-content">
+                            <div class="cert-icon glow-pulse">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h3>GenAI Powered Data Analytics</h3>
+                            <p class="issuer">Forage & TATA</p>
+                            <p class="issuer" style="font-size: 0.85rem; padding-top: 5px;">Completed practical tasks in
+                                exploratory data analysis and ML profiling.</p>
+                            <div class="cert-tags mt-2">
+                                <span class="tech-tag" style="font-size: 0.75rem; padding: 2px 8px;">GenAI</span>
+                                <span class="tech-tag" style="font-size: 0.75rem; padding: 2px 8px;">Data
+                                    Analytics</span>
+                            </div>
+                            <div class="cert-footer mt-auto pt-3">
+                                <span class="cert-date" style="font-size: 0.85rem;"><i class="far fa-calendar-alt"></i>
+                                    June 2025</span>
+                                <a href="genai_cert.jpg" target="_blank" class="verify-link">Verify <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass-panel hover-scale">
+                        <div class="cert-img-container">
+                            <img src="robotics_visual.png" alt="Robotics Simulation" class="cert-img">
+                            <div class="cert-img-overlay"></div>
+                        </div>
+                        <div class="cert-content">
+                            <div class="cert-icon glow-pulse">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>Robotics and Controls Job Simulation</h3>
+                            <p class="issuer">Forage & Johnson & Johnson MedTech</p>
+                            <p class="issuer" style="font-size: 0.85rem; padding-top: 5px;">Completed tasks in
+                                diagnosing and resolving delays in surgical robot arms, and design optimization for
+                                enhanced surgical arm responsiveness.</p>
+                            <div class="cert-tags mt-2">
+                                <span class="tech-tag" style="font-size: 0.75rem; padding: 2px 8px;">Robotics</span>
+                                <span class="tech-tag" style="font-size: 0.75rem; padding: 2px 8px;">Systems
+                                    Control</span>
+                            </div>
+                            <div class="cert-footer mt-auto pt-3">
+                                <span class="cert-date" style="font-size: 0.85rem;"><i class="far fa-calendar-alt"></i>
+                                    October 2025</span>
+                                <a href="robotics_cert.jpg" target="_blank" class="verify-link">Verify <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Establish <span class="highlight-text">Connection</span></h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info glass-panel reveal-left">
+                        <h3><i class="fas fa-satellite-dish"></i> Transmission Ready</h3>
+                        <p>Looking to integrate advanced AI into your systems or seeking a machine learning engineer?
+                            Open a communication channel below.</p>
+
+                        <div class="contact-methods">
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">Direct Line</span>
+                                    <a href="mailto:vishnulate80@gmail.com"
+                                        class="method-value">vishnulate80@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fab fa-github"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">Repository</span>
+                                    <a href="https://github.com/vishnu-late" target="_blank" rel="noopener noreferrer"
+                                        class="method-value">github.com/vishnu-late</a>
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fab fa-linkedin-in"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">Network</span>
+                                    <a href="https://www.linkedin.com/in/vishnu-late-4a4a0229b" target="_blank"
+                                        rel="noopener noreferrer" class="method-value">linkedin.com/in/vishnu-late</a>
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fas fa-phone-alt"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">VoIP Signal</span>
+                                    <a href="tel:+918010449890" class="method-value">+91 8010449890</a>
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fab fa-whatsapp"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">Instant Sync</span>
+                                    <a href="https://wa.me/918010449890" target="_blank" class="method-value">WhatsApp
+                                        Message</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container glass-panel reveal-right">
+                        <form id="contactForm" action="https://formsubmit.co/vishnulate80@gmail.com" method="POST"
+                            class="contact-form">
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_subject" value="New Transmission from Portfolio!">
+                            <input type="hidden" name="_template" value="table">
+
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" required class="form-control"
+                                    autocomplete="off">
+                                <label for="name" class="form-label">Identifier (Name)</label>
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" required class="form-control"
+                                    autocomplete="off">
+                                <label for="email" class="form-label">Comms Link (Email)</label>
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" rows="4" required class="form-control"
+                                    autocomplete="off"></textarea>
+                                <label for="message" class="form-label">Data Payload (Message)</label>
+                                <div class="input-glow"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block glow-btn">
+                                <span class="btn-text">Transmit Protocol</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Certificate Image Modal (HUD Viewer) -->
+    <div id="certModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <div class="modal-content-wrapper glass-panel">
+            <div class="modal-header">
+                <i class="fas fa-shield-halved"></i>
+                <span>VERIFIED_CREDENTIAL_VIEWER</span>
+            </div>
+            <img class="modal-img" id="modalImg">
+            <div class="modal-footer">
+                <p>System authenticated and verified.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-text">VISHNU <span class="highlight-text">LATE</span></span>
+                    </div>
+                    <p>Architecting Intelligence. Forging the Future.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Nav</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-dock">
+                        <a href="https://github.com/vishnu-late" target="_blank" rel="noopener noreferrer"
+                            class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vishnu-late-4a4a0229b" target="_blank"
+                            rel="noopener noreferrer" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="system-status-footer">
+                    <span class="dot green"></span> All systems operational
+                </div>
+                <p>&copy; 2026 Late.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vishnu AI Chatbot -->
+    <div id="ai-chatbot" class="ai-chatbot">
+        <div id="chat-launcher" class="chat-launcher glow-pulse" title="Initialize AI Uplink">
+            <i class="fas fa-robot"></i>
+            <span class="launcher-text">V_AI</span>
+        </div>
+
+        <div id="chat-window" class="chat-window glass-panel">
+            <div class="chat-header">
+                <div class="header-info">
+                    <i class="fas fa-robot"></i>
+                    <span>SYSTEM_INTERFACE_v4.2</span>
+                </div>
+                <div class="header-actions">
+                    <span class="status-pulse"></span>
+                    <button id="stop-voice" class="stop-audio-btn" title="Stop All Audio"><i
+                            class="fas fa-volume-mute"></i></button>
+                    <button id="close-chat" class="close-btn"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <div class="message system">
+                    <div class="msg-content">
+                        SYSTEM_UPLINK_ESTABLISHED. I am your AI assistant. How can I assist you today?
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Enter query..." autocomplete="off">
+                <button id="stop-generation" class="stop-gen-btn" title="Stop Generation"><i
+                        class="fas fa-stop-circle"></i></button>
+                <button id="voice-btn" class="voice-btn" title="Voice Input"><i class="fas fa-microphone"></i></button>
+                <button id="send-msg" class="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
